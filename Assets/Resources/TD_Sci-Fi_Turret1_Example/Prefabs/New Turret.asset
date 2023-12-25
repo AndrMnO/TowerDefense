@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976e447666eb9a043b81824340664d23, type: 3}
   m_Name: New Turret
   m_EditorClassIdentifier: 
-  _damage: 2
-  _price: 20
-  _fireRate: 2
+  _damage: 10
+  _price: 1
+  _fireRate: 0.3
   _speedBullet: 100
   _turretName: OrangeTurret
   _canRotate: 1
