@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Enemy
   m_EditorClassIdentifier: 
   _damage: 10
-  _health: 30
+  _health: 100
   _speed: 5
   _worth: 1
   _model: {fileID: 1572146023126494393, guid: 448adfdc47d8411459c0b0a5d797e5c6, type: 3}

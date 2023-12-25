@@ -61,7 +61,16 @@ public class shootScript : MonoBehaviour
             target = other.transform;
             Debug.Log("traget true");
             startShoot = true;
+            //StartCoroutine(Shoot(fireRate));
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Enemy" && startShoot)
+        {
             StartCoroutine(Shoot(fireRate));
+            startShoot = false;
         }
     }
 
@@ -73,7 +82,7 @@ public class shootScript : MonoBehaviour
             target = null;
             Debug.Log("traget false");
             startShoot = false;
-            StopCoroutine(Shoot(fireRate));
+            //StopCoroutine(Shoot(fireRate));
         }
     }
 
